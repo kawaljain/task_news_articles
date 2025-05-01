@@ -1,3 +1,11 @@
-.App {
+body {
+  margin: 0px !important;
+  padding: 0;
+}
+.main {
   text-align: center;
+}
+
+.nav-main-container {
+  margin-bottom: 20px;
 }
