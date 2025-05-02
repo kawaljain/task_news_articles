@@ -1,3 +1,4 @@
+const defaultImageUrl = "https://placehold.co/600x400";
 const List = ({ article, ...props }) => {
   return (
     <div className="col-md-4 article-container">
@@ -5,7 +6,7 @@ const List = ({ article, ...props }) => {
         <img
           className="card-img-top article-image"
           alt={article.title}
-          src={article.imageUrl}
+          src={article.imageUrl ?? defaultImageUrl}
         />
         <div className="card-body">
           <h5 className="card-title">{article.title}</h5>
