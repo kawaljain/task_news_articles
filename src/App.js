@@ -28,7 +28,7 @@ function App() {
     setSearch("");
     setInput("");
   };
-  
+
   return (
     <>
       <Header />
@@ -63,16 +63,20 @@ function App() {
               <h2>Articles List</h2>
             </div>
             <div className="row">
-              {loading && <Loader />}
-
-              {error ? (
+              {loading ? (
+                <Loader />
+              ) : error ? (
                 <ErrorLayout errorMsg={error} />
               ) : articles.length > 0 ? (
                 articles.map((article) => {
                   return <List article={article} key={article.title} />;
                 })
               ) : (
-                <p>No articles for particular user - {search}</p>
+                <p>{`${
+                  search
+                    ? `No articles for particular user -${search}.`
+                    : "Need to Search for an User."
+                }`}</p>
               )}
             </div>
           </div>
