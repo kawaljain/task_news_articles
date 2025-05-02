@@ -1,8 +1,8 @@
 const Header = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-main-container">
-      <div class="container">
-        <div class="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light nav-main-container">
+      <div className="container">
+        <div className="navbar-brand" href="#">
           News Search App
         </div>
       </div>

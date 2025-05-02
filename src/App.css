@@ -9,3 +9,12 @@ body {
 .nav-main-container {
   margin-bottom: 20px;
 }
+.article-container .article-image {
+  width: 100%;
+  display: block;
+  height: 200px;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+}

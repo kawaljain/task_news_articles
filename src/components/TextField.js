@@ -1,12 +1,15 @@
-const TextField = () => {
+const TextField = ({ value, onChangeHandler, ...props }) => {
   return (
-    <div class="input-group input-group-lg">
+    <div className="input-group input-group-lg">
       <input
         type="text"
-        class="form-control"
+        className="form-control"
+        value={value}
+        onChange={onChangeHandler}
         aria-label="Large"
         aria-describedby="inputGroup-sizing-sm"
         placeholder="Text to search"
+        {...props}
       />
     </div>
   );
